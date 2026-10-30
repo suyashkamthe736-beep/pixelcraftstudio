@@ -304,3 +304,45 @@ function toggleMenu() {
 
 </body>
 </html>
+<script>
+const owner = "suyashkamthe736";
+const repo = "pixel-craft-studio";
+const folder = "portfolio";
+
+const gallery = document.getElementById("portfolio-gallery");
+
+fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${folder}`)
+  .then(response => {
+    if (!response.ok) throw new Error("Images not found");
+    return response.json();
+  })
+  .then(files => {
+    files
+      .filter(file =>
+        file.type === "file" &&
+        /\.(jpg|jpeg|png|webp)$/i.test(file.name)
+      )
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .forEach(file => {
+        const card = document.createElement("div");
+        card.className = "work";
+
+        const img = document.createElement("img");
+        img.src = file.download_url;
+        img.alt = file.name;
+
+        const title = document.createElement("h3");
+        title.textContent = file.name.replace(/\.[^.]+$/, "")
+          .replace(/[-_]/g, " ");
+
+        card.append(img, title);
+        gallery.appendChild(card);
+      });
+  })
+  .catch(error => {
+    gallery.textContent = "Portfolio images could not be loaded.";
+    console.error(error);
+  });
+</script>
+</body>
+
