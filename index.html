@@ -1,79 +1,317 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Pixel Craft Studio creates logos, social media graphics, YouTube thumbnails, invitations, posters and business banners.">
-<title>Pixel Craft Studio — Creative Design Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Craft Studio | Creative Design Agency</title>
+<meta name="description" content="Pixel Craft Studio creates logos, social media designs, YouTube thumbnails, posters and business banners.">
+
 <style>
-:root{--bg:#0b0b12;--panel:#14131e;--muted:#b9b5c9;--text:#f8f7ff;--accent:#b7a1ff;--accent2:#f0abfc;--line:#302b40}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#241c3b 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.08em}.mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#15111e;font-size:22px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.18em}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:var(--accent);color:#15111e;font-weight:750;border:1px solid transparent;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.secondary{background:transparent;color:var(--text);border-color:#554a70}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;padding:86px 0 76px}.eyebrow{font-size:12px;letter-spacing:.2em;color:var(--accent);font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.03;letter-spacing:-.055em;margin:18px 0}.hero h1 span{color:var(--accent)}.hero p{color:var(--muted);max-width:590px;font-size:17px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.visual{position:relative;min-height:360px;display:grid;place-items:center}.orb{position:absolute;width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#ec4899);filter:blur(2px);opacity:.25}.art-card{position:relative;width:min(100%,370px);padding:25px;border:1px solid #51476a;border-radius:25px;background:linear-gradient(145deg,#201a31dd,#11101aee);box-shadow:0 28px 80px #0008;transform:rotate(3deg)}.art-top{display:flex;justify-content:space-between;color:#d7cafa;font-size:12px;letter-spacing:.14em}.art-symbol{font-size:100px;line-height:1.3;text-align:center;background:linear-gradient(135deg,#c4b5fd,#f0abfc);color:transparent;background-clip:text;-webkit-background-clip:text}.art-card h3{font-size:28px;line-height:1.05;margin:8px 0}.art-card p{font-size:13px;margin-bottom:0}.section{padding:65px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}.section h2{font-size:clamp(30px,4vw,45px);line-height:1.1;letter-spacing:-.035em;margin:8px 0}.sub{color:var(--muted);max-width:560px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service,.work-card,.contact-box{background:linear-gradient(145deg,#171522,#111019);border:1px solid var(--line);border-radius:18px;padding:23px}.service .icon{width:48px;height:48px;display:grid;place-items:center;background:#29213b;color:var(--accent);border-radius:14px;font-size:23px}.service h3{margin:17px 0 7px}.service p,.work-card p{margin:0;color:var(--muted);font-size:14px}.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work-card{padding:12px;overflow:hidden}.mock{aspect-ratio:4/3;border-radius:12px;display:grid;place-items:center;text-align:center;padding:18px;font-weight:900;letter-spacing:.06em;font-size:clamp(18px,2.3vw,29px)}.mock.one{background:linear-gradient(135deg,#342050,#a78bfa);color:#fff}.mock.two{background:linear-gradient(135deg,#f9a8d4,#fef3c7);color:#30162c}.mock.three{background:linear-gradient(135deg,#082f49,#38bdf8);color:#f0f9ff}.mock.four{background:linear-gradient(135deg,#431407,#f59e0b);color:#fff7ed}.mock.five{background:linear-gradient(135deg,#052e2b,#2dd4bf);color:#ecfdf5}.mock.six{background:linear-gradient(135deg,#27272a,#a1a1aa);color:white}.work-card h3{font-size:15px;margin:12px 4px 3px}.work-card p{margin:0 4px 5px;font-size:12px}.note{font-size:12px;color:#9d97b0;margin-top:14px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:20px;border-left:2px solid var(--accent);background:#12111a;border-radius:0 14px 14px 0}.step b{font-size:12px;color:var(--accent);letter-spacing:.14em}.step h3{margin:8px 0}.step p{margin:0;color:var(--muted);font-size:14px}.contact-box{display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px;padding:32px;background:linear-gradient(120deg,#211936,#14121f)}.contact-box p{color:var(--muted);max-width:620px}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;gap:25px;padding:56px 0}.visual{min-height:300px}.grid,.portfolio,.steps{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.contact-box{grid-template-columns:1fr}.contact-box .btn{justify-self:start}}
-@media(max-width:480px){.grid,.portfolio,.steps{grid-template-columns:1fr}.hero h1{font-size:46px}.visual{min-height:280px}.art-card{max-width:310px}.section{padding:48px 0}}
+:root {
+  --bg: #100D18;
+  --card: #1B1428;
+  --purple: #8B5CF6;
+  --light: #C4A7FF;
+  --white: #FFFFFF;
+  --muted: #B8AEC8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: Arial, sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  line-height:1.6;
+}
+a { text-decoration:none; color:inherit; }
+.container { width:90%; max-width:1150px; margin:auto; }
+header {
+  position:sticky; top:0; z-index:10;
+  background:rgba(16,13,24,.94);
+  border-bottom:1px solid #33234a;
+  backdrop-filter:blur(12px);
+}
+nav {
+  min-height:75px; display:flex;
+  justify-content:space-between; align-items:center;
+}
+.logo { font-size:22px; font-weight:900; letter-spacing:1px; }
+.logo span { color:var(--purple); }
+.navlinks { display:flex; gap:25px; align-items:center; }
+.navlinks a:hover { color:var(--light); }
+.btn {
+  display:inline-block; padding:12px 23px;
+  border-radius:30px; font-weight:bold;
+  background:linear-gradient(90deg,#7135DB,#A855F7);
+  color:white; border:1px solid var(--purple);
+  transition:.3s;
+}
+.btn:hover { transform:translateY(-3px); box-shadow:0 0 22px #8B5CF688; }
+.outline {
+  background:transparent; border:1px solid var(--purple);
+}
+.hero {
+  min-height:550px; display:flex;
+  align-items:center;
+  background:radial-gradient(ellipse at 80% 40%,#43216b 0%,transparent 48%);
+}
+.hero-content { max-width:700px; padding:90px 0; }
+.tag { color:var(--light); letter-spacing:4px; font-size:12px; font-weight:bold; }
+h1 { font-size:clamp(42px,7vw,76px); line-height:1.08; margin:18px 0; }
+h1 span { color:var(--purple); }
+.hero p { color:var(--muted); max-width:570px; margin-bottom:28px; }
+section { padding:85px 0; }
+.section-title { text-align:center; margin-bottom:40px; }
+.section-title h2 { font-size:36px; margin:8px 0; }
+.section-title p { color:var(--muted); }
+.services {
+  display:grid; grid-template-columns:repeat(5,1fr); gap:17px;
+}
+.service-card {
+  padding:25px 18px; background:var(--card);
+  border:1px solid #392650; border-radius:15px;
+  transition:.3s;
+}
+.service-card:hover {
+  transform:translateY(-7px); border-color:var(--purple);
+  box-shadow:0 10px 35px #8B5CF622;
+}
+.service-card .symbol { font-size:30px; color:var(--light); }
+.service-card h3 { margin:14px 0 8px; font-size:17px; }
+.service-card p { color:var(--muted); font-size:13px; }
+.portfolio {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+}
+.work {
+  min-height:210px; border-radius:15px;
+  border:1px solid #49305e; padding:25px;
+  display:flex; flex-direction:column;
+  justify-content:flex-end; overflow:hidden;
+  background:linear-gradient(135deg,#25143B,#11101B);
+  transition:.3s;
+}
+.work:hover { transform:scale(1.025); border-color:var(--purple); }
+.work:nth-child(2) { background:linear-gradient(135deg,#31134e,#11101B); }
+.work:nth-child(3) { background:linear-gradient(135deg,#18223f,#11101B); }
+.work:nth-child(4) { background:linear-gradient(135deg,#40204e,#11101B); }
+.work:nth-child(5) { background:linear-gradient(135deg,#1c3140,#11101B); }
+.work:nth-child(6) { background:linear-gradient(135deg,#352344,#11101B); }
+.work .preview { font-size:35px; margin-bottom:20px; }
+.work h3 { font-size:19px; }
+.work p { color:var(--muted); font-size:13px; }
+.about-box {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:40px; align-items:center;
+  background:var(--card); padding:40px;
+  border-radius:20px; border:1px solid #392650;
+}
+.about-art {
+  min-height:250px; display:grid; place-items:center;
+  border-radius:15px; font-size:65px;
+  background:radial-gradient(circle,#54238a,#171020 70%);
+}
+.about-box p { color:var(--muted); margin:15px 0; }
+.contact-box {
+  text-align:center; padding:55px 25px;
+  border:1px solid #58358a; border-radius:20px;
+  background:radial-gradient(ellipse at center,#32164c,#171020 75%);
+}
+.contact-box h2 { font-size:34px; margin:12px 0; }
+.contact-box p { color:var(--muted); margin-bottom:25px; }
+footer {
+  border-top:1px solid #33234a;
+  padding:30px 0; text-align:center; color:var(--muted);
+}
+footer .logo { color:white; margin-bottom:10px; }
+.menu-btn {
+  display:none; background:none; border:0;
+  color:white; font-size:28px; cursor:pointer;
+}
+@media(max-width:900px) {
+  .services { grid-template-columns:repeat(2,1fr); }
+  .portfolio { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:650px) {
+  .menu-btn { display:block; }
+  .navlinks {
+    display:none; position:absolute; top:75px; left:0;
+    width:100%; background:#171020;
+    padding:25px; flex-direction:column;
+    border-bottom:1px solid #49305e;
+  }
+  .navlinks.show { display:flex; }
+  .services,.portfolio,.about-box { grid-template-columns:1fr; }
+  section { padding:60px 0; }
+  .hero { min-height:480px; }
+  .about-box { padding:22px; }
+  .section-title h2 { font-size:29px; }
+}
 </style>
 </head>
+
 <body>
-<header class="wrap">
-  <nav class="nav" aria-label="Main navigation">
-    <a class="brand" href="#home"><span class="mark">✳</span><span>PIXEL CRAFT<small>STUDIO · CREATIVE DESIGN</small></span></a>
-    <div class="links"><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
-    <a class="btn" href="#contact">Let's Talk ↗</a>
-  </nav>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home"><span>✦</span> PIXEL CRAFT</a>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <a class="btn" id="navWhatsApp" href="#">WhatsApp</a>
+      </div>
+    </nav>
+  </div>
 </header>
+
 <main>
-<section class="wrap hero" id="home">
-  <div>
-    <div class="eyebrow">Independent creative design studio</div>
-    <h1>Ideas into<br><span>visual impact.</span></h1>
-    <p>We create memorable logos, bold social media graphics, YouTube thumbnails and custom posters that help your ideas stand out.</p>
-    <div class="actions"><a class="btn" href="#contact">Start a Project ↗</a><a class="btn secondary" href="#work">Explore Portfolio</a></div>
-  </div>
-  <div class="visual" aria-label="Decorative design preview">
-    <div class="orb"></div>
-    <div class="art-card"><div class="art-top"><span>PCS / 001</span><span>DESIGN LAB</span></div><div class="art-symbol">✳</div><h3>MAKE IT<br>MEMORABLE.</h3><p>BRAND IDENTITY · DIGITAL ART · CREATIVE THINKING</p></div>
-  </div>
-</section>
-<section class="wrap section" id="services">
-  <div class="section-head"><div><div class="eyebrow">What we do</div><h2>Design services</h2></div><p class="sub">Thoughtful visuals for creators, small businesses and special occasions.</p></div>
-  <div class="grid">
-    <article class="service"><div class="icon">✳</div><h3>Logo Design</h3><p>Distinctive logos and brand marks designed to make your identity recognizable.</p></article>
-    <article class="service"><div class="icon">▧</div><h3>Social Media Posts</h3><p>Consistent, engaging graphics for launches, promotions and everyday content.</p></article>
-    <article class="service"><div class="icon">▶</div><h3>YouTube Thumbnails</h3><p>Bold thumbnail concepts that make your video topic clear at a glance.</p></article>
-    <article class="service"><div class="icon">✉</div><h3>Birthday & Invitations</h3><p>Personalized birthday posters, event invitations and celebration designs.</p></article>
-    <article class="service"><div class="icon">▤</div><h3>Business Banners</h3><p>Promotional banners and visual materials for shops, events and local brands.</p></article>
-    <article class="service"><div class="icon">✦</div><h3>Custom Design</h3><p>Have another idea? Share your brief and we can discuss a custom design.</p></article>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="tag">GRAPHIC DESIGN STUDIO</div>
+      <h1>Turning Ideas Into <span>Stunning Visuals.</span></h1>
+      <p>We create unique designs that make your brand stand out.
+      From logos to social media, we bring your vision to life
+      with creativity and precision.</p>
+      <a class="btn" href="#portfolio">Explore Our Work →</a>
+      &nbsp;
+      <a class="btn outline" href="#contact">Contact Us</a>
+    </div>
   </div>
 </section>
-<section class="wrap section" id="work">
-  <div class="section-head"><div><div class="eyebrow">Selected concepts</div><h2>Creative showcase</h2></div><p class="sub">Replace these sample tiles with your own completed projects before publishing.</p></div>
-  <div class="portfolio">
-    <article class="work-card"><div class="mock one">NOVA<br>STUDIO</div><h3>Brand identity concept</h3><p>Logo design</p></article>
-    <article class="work-card"><div class="mock two">YOUR NEXT<br>BIG THING</div><h3>Campaign creative concept</h3><p>Social media post</p></article>
-    <article class="work-card"><div class="mock three">LEVEL UP<br>YOUR GAME</div><h3>Creator thumbnail concept</h3><p>YouTube thumbnail</p></article>
-    <article class="work-card"><div class="mock four">MAKE IT<br>A PARTY!</div><h3>Celebration concept</h3><p>Birthday poster</p></article>
-    <article class="work-card"><div class="mock five">FRESH<br>IDEAS DAILY</div><h3>Promotion concept</h3><p>Business banner</p></article>
-    <article class="work-card"><div class="mock six">LESS NOISE.<br>MORE IMPACT.</div><h3>Typography concept</h3><p>Digital poster</p></article>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <div class="tag">WHAT WE DO</div>
+      <h2>Our Services</h2>
+      <p>Creative designs to grow your brand and business.</p>
+    </div>
+    <div class="services">
+      <div class="service-card">
+        <div class="symbol">✦</div>
+        <h3>Logo Design</h3>
+        <p>Unique and memorable logos that define your brand identity.</p>
+      </div>
+      <div class="service-card">
+        <div class="symbol">▣</div>
+        <h3>Social Media Posts</h3>
+        <p>Eye-catching designs for Instagram, Facebook and more.</p>
+      </div>
+      <div class="service-card">
+        <div class="symbol">▶</div>
+        <h3>YouTube Thumbnails</h3>
+        <p>Attractive thumbnails that help your videos stand out.</p>
+      </div>
+      <div class="service-card">
+        <div class="symbol">▧</div>
+        <h3>Posters & Invitations</h3>
+        <p>Beautiful birthday, event and invitation posters.</p>
+      </div>
+      <div class="service-card">
+        <div class="symbol">▤</div>
+        <h3>Business Banners</h3>
+        <p>Professional banners for your business and promotions.</p>
+      </div>
+    </div>
   </div>
-  <p class="note">These are illustrative placeholders, not client work. Add your real designs and get permission before showing client projects.</p>
 </section>
-<section class="wrap section" id="process">
-  <div class="section-head"><div><div class="eyebrow">Simple and clear</div><h2>How it works</h2></div></div>
-  <div class="steps">
-    <div class="step"><b>01 / BRIEF</b><h3>Share your idea</h3><p>Tell us what you need, the size, text, references and deadline.</p></div>
-    <div class="step"><b>02 / DESIGN</b><h3>Review the concept</h3><p>We discuss the design direction and agree on revisions before final delivery.</p></div>
-    <div class="step"><b>03 / DELIVER</b><h3>Get your files</h3><p>Receive the agreed export formats for your intended use.</p></div>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <div class="tag">OUR CREATIONS</div>
+      <h2>Featured Portfolio</h2>
+      <p>A glimpse of creative work from Pixel Craft Studio.</p>
+    </div>
+    <div class="portfolio">
+      <div class="work">
+        <div class="preview">👑</div>
+        <h3>Brand Logo</h3><p>Logo Design</p>
+      </div>
+      <div class="work">
+        <div class="preview">🎮</div>
+        <h3>Game On</h3><p>YouTube Thumbnail</p>
+      </div>
+      <div class="work">
+        <div class="preview">🎂</div>
+        <h3>Birthday Special</h3><p>Birthday Poster</p>
+      </div>
+      <div class="work">
+        <div class="preview">👟</div>
+        <h3>New Collection</h3><p>Business Promotion</p>
+      </div>
+      <div class="work">
+        <div class="preview">🌴</div>
+        <h3>Good Vibes</h3><p>Social Media Post</p>
+      </div>
+      <div class="work">
+        <div class="preview">💜</div>
+        <h3>Creative Identity</h3><p>Graphic Design</p>
+      </div>
+    </div>
+    <p style="text-align:center;color:#B8AEC8;margin-top:20px;font-size:13px">
+      Sample portfolio designs — replace these with your actual projects.
+    </p>
   </div>
 </section>
-<section class="wrap section" id="contact">
-  <div class="contact-box"><div><div class="eyebrow">Have a project in mind?</div><h2>Let's create something great.</h2><p>Message Pixel Craft Studio with your design idea. We’ll discuss the scope, timeline and price before starting.</p></div><a class="btn" id="orderLink" href="https://wa.me/919890472875" target="_blank" rel="noopener noreferrer">Order on WhatsApp ↗</a></div>
-  <p class="note">Before publishing: edit the WhatsApp link in the code to add your country code and phone number. Do not include spaces or the + sign.</p>
+
+<section id="about">
+  <div class="container">
+    <div class="about-box">
+      <div class="about-art">✦<br><span style="font-size:20px">PIXEL CRAFT</span></div>
+      <div>
+        <div class="tag">ABOUT US</div>
+        <h2>Pixel Craft Studio</h2>
+        <p>We are passionate about creativity and design.
+        Our goal is to help businesses, creators and individuals
+        turn their ideas into stunning visual stories.</p>
+        <p>Design with creativity. Build with passion. Grow with confidence.</p>
+        <a href="#contact" class="btn">Let's Work Together</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div class="tag">LET'S WORK TOGETHER</div>
+      <h2>Ready to Create Something Amazing?</h2>
+      <p>Have a project in mind? Let's discuss your ideas and bring them to life.</p>
+      <a class="btn" id="mainWhatsApp" href="#">☏ Chat on WhatsApp</a>
+    </div>
+  </div>
 </section>
 </main>
-<footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> Pixel Craft Studio</span><span>Designed with creativity ✳</span></div></footer>
+
+<footer>
+  <div class="container">
+    <div class="logo"><span>✦</span> PIXEL CRAFT STUDIO</div>
+    <p>Creative Designs. Powerful Impressions.</p>
+    <p style="margin-top:12px;font-size:12px">
+      © <span id="year"></span> Pixel Craft Studio. All rights reserved.
+    </p>
+  </div>
+</footer>
+
 <script>
+// IMPORTANT: Paste your existing working WhatsApp link below.
+const whatsappLink = "PASTE_YOUR_EXISTING_WHATSAPP_LINK_HERE";
+
+document.getElementById("navWhatsApp").href = whatsappLink;
+document.getElementById("mainWhatsApp").href = whatsappLink;
 document.getElementById("year").textContent = new Date().getFullYear();
-// Replace the href below with your WhatsApp link, e.g. https://wa.me/91XXXXXXXXXX
+
+function toggleMenu() {
+  document.getElementById("navlinks").classList.toggle("show");
+}
 </script>
+
 </body>
 </html>
