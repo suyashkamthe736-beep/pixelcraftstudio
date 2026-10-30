@@ -147,6 +147,47 @@ footer .logo { color:white; margin-bottom:10px; }
   .about-box { padding:22px; }
   .section-title h2 { font-size:29px; }
 }
+
+/* Portfolio Section */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.work {
+    background: #171321;
+    border: 1px solid #6735a8;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.work:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(140, 70, 255, 0.25);
+}
+
+.work img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.work h3 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
 
