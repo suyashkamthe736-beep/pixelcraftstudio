@@ -329,6 +329,7 @@ const repo = "pixel-craft-studio";
 const folder = "portfolio";
 
 const gallery = document.getElementById("portfolio-gallery");
+  gallery.innerHTML = "Loading portfolio...";
 
 fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${folder}`)
   .then(response => {
