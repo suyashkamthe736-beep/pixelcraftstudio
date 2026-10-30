@@ -314,6 +314,15 @@ function toggleMenu() {
 
 </body>
 </html>
+document.getElementById("navWhatsApp").href = whatsappLink;
+document.getElementById("mainWhatsApp").href = whatsappLink;
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function toggleMenu() {
+  document.getElementById("navlinks").classList.toggle("show");
+}
+</script>
+
 <script>
 const owner = "suyashkamthe736";
 const repo = "pixel-craft-studio";
@@ -354,5 +363,8 @@ fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${folder}`)
     console.error(error);
   });
 </script>
+
+</body>
+</html>
 </body>
 
